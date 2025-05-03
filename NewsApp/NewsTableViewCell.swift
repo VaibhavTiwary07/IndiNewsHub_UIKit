@@ -54,7 +54,7 @@ class NewsTableViewCell: UITableViewCell {
         contentView.addSubview(substitleLabel)
         contentView.addSubview(newsImageView)
     }
-    
+//    just checking the commit
     required init?(coder:NSCoder){
         fatalError()
     }
