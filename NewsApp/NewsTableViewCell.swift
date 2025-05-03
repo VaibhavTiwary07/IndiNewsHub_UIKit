@@ -28,7 +28,7 @@ class NewsTableViewCell: UITableViewCell {
     private let newsTitleLabel:UILabel={
         let label = UILabel()
         label.numberOfLines = 0
-        label.font = .systemFont(ofSize: 25,weight: .medium)
+        label.font = .systemFont(ofSize: 22,weight: .semibold)
 
         return label
     }()
@@ -36,13 +36,16 @@ class NewsTableViewCell: UITableViewCell {
     private let substitleLabel:UILabel = {
         let label = UILabel()
         label.numberOfLines = 0
-        label.font = .systemFont(ofSize: 18, weight: .regular)
+        label.font = .systemFont(ofSize: 17, weight: .light)
         return label
     }()
     
     private  let newsImageView:UIImageView = {
         let imageView = UIImageView()
-        imageView.backgroundColor = .systemRed
+        imageView.clipsToBounds = true
+        imageView.layer.cornerRadius = 6
+        imageView.layer.masksToBounds = true
+        imageView.backgroundColor = .secondarySystemBackground
         imageView.contentMode = .scaleAspectFill
         return imageView
     }()
@@ -68,6 +71,9 @@ class NewsTableViewCell: UITableViewCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
+        newsTitleLabel.text = nil;
+        substitleLabel.text = nil;
+        newsImageView.image = nil;
     }
     
     func configure(with viewModel: NewsTableViewCellViewModel){
@@ -76,8 +82,20 @@ class NewsTableViewCell: UITableViewCell {
         
         if let data = viewModel.imageData{
             newsImageView.image = UIImage(data:data)
-        }else{
-//            fetch
+            
+        }else if let url = viewModel.imageURL{
+            URLSession.shared.dataTask(with: url){[weak self] data,_,error in
+                guard let data = data,error == nil else{
+                    return
+                }
+                viewModel.imageData = data
+                
+                DispatchQueue.main.async{
+                    self?.newsImageView.image = UIImage(data: data)
+                }
+                
+            }.resume()
+        
         }
     }
 }
