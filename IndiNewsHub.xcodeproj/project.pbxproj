@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DBFC62122DBCBEF70069B6F5 /* NewsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBFC62122DBCBEF70069B6F5 /* IndiNewsHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IndiNewsHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBFC62152DBCBEF70069B6F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBFC62172DBCBEF70069B6F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DBFC62192DBCBEF70069B6F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,7 +52,7 @@
 		DBFC62132DBCBEF70069B6F5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DBFC62122DBCBEF70069B6F5 /* NewsApp.app */,
+				DBFC62122DBCBEF70069B6F5 /* IndiNewsHub.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,9 +76,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DBFC62112DBCBEF70069B6F5 /* NewsApp */ = {
+		DBFC62112DBCBEF70069B6F5 /* IndiNewsHub */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DBFC62262DBCBEF90069B6F5 /* Build configuration list for PBXNativeTarget "NewsApp" */;
+			buildConfigurationList = DBFC62262DBCBEF90069B6F5 /* Build configuration list for PBXNativeTarget "IndiNewsHub" */;
 			buildPhases = (
 				DBFC620E2DBCBEF70069B6F5 /* Sources */,
 				DBFC620F2DBCBEF70069B6F5 /* Frameworks */,
@@ -88,9 +88,9 @@
 			);
 			dependencies = (
 			);
-			name = NewsApp;
+			name = IndiNewsHub;
 			productName = NewsApp;
-			productReference = DBFC62122DBCBEF70069B6F5 /* NewsApp.app */;
+			productReference = DBFC62122DBCBEF70069B6F5 /* IndiNewsHub.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -108,7 +108,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DBFC620D2DBCBEF70069B6F5 /* Build configuration list for PBXProject "NewsApp" */;
+			buildConfigurationList = DBFC620D2DBCBEF70069B6F5 /* Build configuration list for PBXProject "IndiNewsHub" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -121,7 +121,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DBFC62112DBCBEF70069B6F5 /* NewsApp */,
+				DBFC62112DBCBEF70069B6F5 /* IndiNewsHub */,
 			);
 		};
 /* End PBXProject section */
@@ -352,7 +352,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DBFC620D2DBCBEF70069B6F5 /* Build configuration list for PBXProject "NewsApp" */ = {
+		DBFC620D2DBCBEF70069B6F5 /* Build configuration list for PBXProject "IndiNewsHub" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DBFC62242DBCBEF90069B6F5 /* Debug */,
@@ -361,7 +361,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DBFC62262DBCBEF90069B6F5 /* Build configuration list for PBXNativeTarget "NewsApp" */ = {
+		DBFC62262DBCBEF90069B6F5 /* Build configuration list for PBXNativeTarget "IndiNewsHub" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DBFC62272DBCBEF90069B6F5 /* Debug */,
