@@ -92,7 +92,7 @@ class ViewController: UIViewController ,UITableViewDelegate, UITableViewDataSour
         return cell
         
     }
-    
+//    m, kfc 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let article = articles[indexPath.row]
